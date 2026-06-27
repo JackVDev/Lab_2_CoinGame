@@ -29,6 +29,8 @@ def main():
             player2.win_coin()
             player1.lose_coin()
         # Display coins remaining
+        print(f"{player1.get_name()} has {player1.get_wallet()} coins remaining.")
+        print(f"{player2.get_name()} has {player2.get_wallet()} coins remaining.")
         # Loop exit conditions: user input, either player has 0 coins
         if player1.get_wallet() < 1 or player2.get_wallet() < 1:
             gameover = True
