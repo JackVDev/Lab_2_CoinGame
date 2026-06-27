@@ -36,6 +36,11 @@ def main():
             gameover = True
         elif input("Do you want to toss the coins? (y/n): ").lower() != "y":
             gameover = True
+    # While loop is now over, show final coin totals
+    print("- Game over! -")
+    print("Final Score:")
+    print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
+    print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
 
 if __name__ == "__main__":
     main()
