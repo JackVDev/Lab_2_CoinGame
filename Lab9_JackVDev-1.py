@@ -8,7 +8,9 @@ from player import Player
 
 def main():
     #Run program
-    print("UNFINISHED")
+    print("- Coin Matching Game -")
+    player1 = Player("Player 1")
+    player2 = Player("Player 2")
 
 if __name__ == "__main__":
     main()
