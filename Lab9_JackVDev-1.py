@@ -14,6 +14,11 @@ def main():
     gameover = False
     while not(gameover):
         # Flip coins and print the sides
+        player1.toss_coin()
+        player2.toss_coin()
+        print("Flipping Coins...")
+        print(f"{player1.get_name()} got {player1.get_coin_side()}")
+        print(f"{player2.get_name()} got {player2.get_coin_side()}")
         # Check for matching sides, if match p1 wins, else p2 wins
         # Display coins remaining
         # Loop exit conditions: user input, either player has 0 coins
