@@ -42,5 +42,18 @@ def main():
     print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
 
+    # Check coin values and determine winner
+    if player1.get_wallet() == player2.get_wallet():
+        print("Its a tie!")
+    elif player1.get_wallet() < 1 or player2.get_wallet() < 1:
+        if player1.get_wallet() < 1:
+            print(f"{player1.get_name()} has no coins! {player2.get_name()} wins!")
+        else:
+            print(f"{player2.get_name()} has no coins! {player1.get_name()} wins!")
+    elif player1.get_wallet() > player2.get_wallet():
+        print(f"{player1.get_name()} has more coins! {player1.get_name()} wins!")
+    else:
+        print(f"{player2.get_name()} has more coins! {player2.get_name()} wins!")
+
 if __name__ == "__main__":
     main()
